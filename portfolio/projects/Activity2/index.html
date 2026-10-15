@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jhon Kenneth Sevillano | Front-End Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+
+  <!-- Preloader (1% → 100%) -->
+  <div id="loader">
+    <div class="loader-logo">&lt;JKS /&gt;</div>
+    <div class="loader-percent"><span id="loadNum">1</span><small>%</small></div>
+    <div class="loader-bar"><span id="loadBar"></span></div>
+    <p class="loader-status" id="loadStatus">Loading assets...</p>
+  </div>
+
+  <!-- Effects -->
+  <div class="scroll-progress" id="progress"></div>
+  <div class="cursor-glow" id="glow"></div>
+  <canvas id="stars"></canvas>
+  <div class="aurora"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div>
+  <div class="grid-overlay"></div>
+
+  <!-- Navigation -->
+  <nav id="nav">
+    <a href="#home" class="logo">JKS<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li class="nav-indicator" aria-hidden="true"></li>
+    </ul>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="avatar-stage">
+      <div class="parallax" id="parallax">
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+
+        <div class="orbit-track">
+          <div class="orbiter" style="--a:0deg;--c:rgba(227,79,38,.6)"><div class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5"></div></div>
+          <div class="orbiter" style="--a:60deg;--c:rgba(21,114,182,.7)"><div class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3"></div></div>
+          <div class="orbiter" style="--a:120deg;--c:rgba(255,45,32,.6)"><div class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="Laravel"></div></div>
+          <div class="orbiter" style="--a:180deg;--c:rgba(247,223,30,.6)"><div class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript"></div></div>
+          <div class="orbiter" style="--a:240deg;--c:rgba(119,123,180,.7)"><div class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP"></div></div>
+          <div class="orbiter" style="--a:300deg;--c:rgba(240,80,50,.6)"><div class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git"></div></div>
+        </div>
+
+        <div class="avatar">
+          <div class="avatar-ring"></div>
+          <img src="../../pic/profile.png" alt="Jhon Kenneth Sevillano">
+          <span class="online" title="Available"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hello-pill"><span class="hand">👋</span> Hello, I'm</div>
+
+    <h1 class="hero-name" id="heroName">
+      <span class="line first" data-split>Jhon Kenneth</span>
+      <span class="line last">Sevillano</span>
+    </h1>
+
+    <p class="terminal"><span class="prompt">&gt;</span> <span id="typed"></span><span class="caret"></span></p>
+
+    <div class="hero-cta">
+      <a href="#contact" class="btn primary magnetic">🚀 Hire Me</a>
+      <a href="#about" class="btn ghost magnetic">Explore More</a>
+    </div>
+
+    <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <main>
+    <!-- ABOUT -->
+    <section id="about" class="block">
+      <div class="section-head reveal">
+        <p class="tag">// 01. who am i</p>
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="line-deco"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="card tilt reveal" style="--tx:-60px;--ty:0">
+          <h3 class="card-title">Turning ideas into <span>pixel-perfect</span> experiences</h3>
+          <p class="muted">I am Jhon Kenneth Sevillano, a passionate front-end web developer with over 5 years of experience building responsive, user-friendly, and performance-optimized web applications. Currently open to opportunities where I can contribute my skills and continue growing professionally.</p>
+          <ul class="info-list">
+            <li><span class="ic">💼</span><div><small>Status</small>Professional Developer</div></li>
+            <li><span class="ic">📍</span><div><small>Location</small>Davao del Sur, Philippines</div></li>
+            <li><span class="ic">⏳</span><div><small>Experience</small>5+ Years</div></li>
+            <li><span class="ic live"></span><div><small>Availability</small>Open to opportunities</div></li>
+          </ul>
+        </div>
+
+        <div class="card code-card reveal" style="--d:.2s;--tx:60px;--ty:0">
+          <div class="code-top">
+            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+            <span class="file">developer.js</span>
+          </div>
+          <div class="code">
+            <span class="ln" style="--l:1"><span class="k">const</span> <span class="v">developer</span> = {</span>
+            <span class="ln" style="--l:2">  name: <span class="s">'Jhon Kenneth Sevillano'</span>,</span>
+            <span class="ln" style="--l:3">  role: <span class="s">'Front-End Developer'</span>,</span>
+            <span class="ln" style="--l:4">  location: <span class="s">'Davao del Sur, PH'</span>,</span>
+            <span class="ln" style="--l:5">  experience: <span class="s">'5+ years'</span>,</span>
+            <span class="ln" style="--l:6">  stack: [<span class="s">'HTML'</span>, <span class="s">'CSS'</span>, <span class="s">'JS'</span>, <span class="s">'Laravel'</span>],</span>
+            <span class="ln" style="--l:7">  available: <span class="b">true</span></span>
+            <span class="ln" style="--l:8">};</span>
+            <span class="ln" style="--l:9"><span class="v">developer</span>.<span class="f">build</span>(<span class="s">'something amazing'</span>); <span class="c">// 🚀</span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="card stat tilt reveal" style="--d:.1s"><div class="stat-num"><span class="counter" data-target="5">0</span>+</div><p>Years Experience</p></div>
+        <div class="card stat tilt reveal" style="--d:.2s"><div class="stat-num"><span class="counter" data-target="8">0</span>+</div><p>Technologies</p></div>
+        <div class="card stat tilt reveal" style="--d:.3s"><div class="stat-num"><span class="counter" data-target="100">0</span>%</div><p>Responsive Designs</p></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="block">
+      <div class="section-head reveal">
+        <p class="tag">// 02. what i use</p>
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <div class="line-deco"></div>
+      </div>
+
+      <div class="marquee reveal">
+        <div class="track">
+          <span>HTML5</span><span>✦</span><span>CSS3</span><span>✦</span><span>JavaScript</span><span>✦</span><span>Laravel</span><span>✦</span><span>Bootstrap</span><span>✦</span><span>PHP</span><span>✦</span><span>MySQL</span><span>✦</span><span>Git</span><span>✦</span>
+          <span>HTML5</span><span>✦</span><span>CSS3</span><span>✦</span><span>JavaScript</span><span>✦</span><span>Laravel</span><span>✦</span><span>Bootstrap</span><span>✦</span><span>PHP</span><span>✦</span><span>MySQL</span><span>✦</span><span>Git</span><span>✦</span>
+        </div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="card skill-card tilt reveal" style="--d:.05s;--c:#e34f26;--level:95%">
+          <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt=""></div>
+          <div class="skill-info"><div class="skill-top"><h4>HTML5</h4><span>95%</span></div><div class="bar"><span></span></div></div>
+        </div>
+        <div class="card skill-card tilt reveal" style="--d:.1s;--c:#3b9ddd;--level:92%">
+          <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt=""></div>
+          <div class="skill-info"><div class="skill-top"><h4>CSS3</h4><span>92%</span></div><div class="bar"><span></span></div></div>
+        </div>
+        <div class="card skill-card tilt reveal" style="--d:.15s;--c:#f7df1e;--level:88%">
+          <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt=""></div>
+          <div class="skill-info"><div class="skill-top"><h4>JavaScript</h4><span>88%</span></div><div class="bar"><span></span></div></div>
+        </div>
+        <div class="card skill-card tilt reveal" style="--d:.2s;--c:#ff2d20;--level:85%">
+          <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt=""></div>
+          <div class="skill-info"><div class="skill-top"><h4>Laravel</h4><span>85%</span></div><div class="bar"><span></span></div></div>
+        </div>
+        <div class="card skill-card tilt reveal" style="--d:.25s;--c:#7952b3;--level:90%">
+          <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt=""></div>
+          <div class="skill-info"><div class="skill-top"><h4>Bootstrap</h4><span>90%</span></div><div class="bar"><span></span></div></div>
+        </div>
+        <div class="card skill-card tilt reveal" style="--d:.3s;--c:#777bb4;--level:85%">
+          <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt=""></div>
+          <div class="skill-info"><div class="skill-top"><h4>PHP</h4><span>85%</span></div><div class="bar"><span></span></div></div>
+        </div>
+        <div class="card skill-card tilt reveal" style="--d:.35s;--c:#4479a1;--level:80%">
+          <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt=""></div>
+          <div class="skill-info"><div class="skill-top"><h4>MySQL</h4><span>80%</span></div><div class="bar"><span></span></div></div>
+        </div>
+        <div class="card skill-card tilt reveal" style="--d:.4s;--c:#f05032;--level:85%">
+          <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt=""></div>
+          <div class="skill-info"><div class="skill-top"><h4>Git</h4><span>85%</span></div><div class="bar"><span></span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="block">
+      <div class="section-head reveal">
+        <p class="tag">// 03. where i learned</p>
+        <h2 class="section-title">My <span>Education</span></h2>
+        <div class="line-deco"></div>
+      </div>
+
+      <div class="timeline reveal" style="--ty:0">
+        <div class="tl-item">
+          <span class="tl-dot"></span>
+          <div class="card tilt tl-card reveal" style="--d:.3s;--tx:40px;--ty:0">
+            <span class="tl-badge">🎓 Education</span>
+            <h3>Bachelor of Science in Information Technology</h3>
+            <p class="muted">Davao del Sur State College</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="block">
+      <div class="section-head reveal">
+        <p class="tag">// 04. say hello</p>
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        <div class="line-deco"></div>
+      </div>
+
+      <div class="glow-border reveal" style="--s:.9">
+        <div class="contact-inner">
+          <h3 class="card-title">Let's build something <span>amazing</span> together</h3>
+          <p class="muted">I'm currently open to new opportunities. Whether you have a project or just want to say hi, my inbox is always open!</p>
+
+          <div class="contact-rows">
+            <div class="c-row"><span>✉️</span><a href="mailto:youremail@gmail.com" id="emailText">youremail@gmail.com</a>
+              <button class="copy-btn" id="copyBtn">Copy</button></div>
+            <div class="c-row"><span>📍</span>Davao del Sur, Philippines</div>
+            <div class="c-row"><span class="ic live"></span>Open to opportunities</div>
+          </div>
+
+          <a href="mailto:youremail@gmail.com" class="btn primary magnetic">Send a Message ✨</a>
+
+          <div class="socials">
+            <a href="#" class="social" aria-label="LinkedIn"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt=""></a>
+            <a href="#" class="social" aria-label="GitHub"><img class="invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt=""></a>
+            <a href="#" class="social" aria-label="Facebook"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/facebook/facebook-original.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Designed &amp; built with <span class="heart">💙</span> by <strong>Jhon Kenneth Sevillano</strong></p>
+    <p class="muted">&copy; 2025 All rights reserved.</p>
+  </footer>
+
+  <a href="#home" class="to-top" id="toTop" aria-label="Back to top">↑</a>
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

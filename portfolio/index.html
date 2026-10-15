@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhon Kenneth Sevillano - Front-End Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-blocks">
+            <span></span><span></span><span></span>
+        </div>
+        <p class="preloader-text">LOADING...</p>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="#home">Kenneth<span>.dev</span></a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="theme-toggle-menu">
+                        <div class="theme-toggle">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-shapes" aria-hidden="true">
+            <span class="shape shape-star">✦</span>
+            <span class="shape shape-circle"></span>
+            <span class="shape shape-square"></span>
+            <span class="shape shape-ring"></span>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="reveal">Hi, I'm <span class="gradient-text">Jhon Kenneth Sevillano</span></h1>
+                    <h2 class="typing-text"></h2>
+                    <p class="tagline reveal">Crafting responsive and interactive web experiences.</p>
+                    <div class="hero-buttons reveal">
+                        <a href="#contact" class="btn btn-primary">Hire Me</a>
+                        <a href="#projects" class="btn btn-secondary">View Projects</a>
+                        <a href="cv/RESUME- SEVILLANO, JHON KENNETH E..pdf" download="Jhon_Kenneth_Sevillano_CV.pdf" class="btn btn-download">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image reveal">
+                    <div class="image-wrapper">
+                        <img src="pic/profile.png" alt="Jhon Kenneth Sevillano">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span>HTML5</span><span>✦</span>
+            <span>CSS3</span><span>✦</span>
+            <span>JavaScript</span><span>✦</span>
+            <span>Laravel</span><span>✦</span>
+            <span>PHP</span><span>✦</span>
+            <span>MySQL</span><span>✦</span>
+            <span>Bootstrap</span><span>✦</span>
+            <span>Git</span><span>✦</span>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title reveal">My Skills</h2>
+            <p class="section-subtitle reveal">Technologies I work with</p>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <h3>HTML5</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="95"></div></div>
+                    <span class="skill-percentage">95%</span>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                    <h3>CSS3</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fab fa-js"></i></div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div>
+                    <span class="skill-percentage">88%</span>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fab fa-laravel"></i></div>
+                    <h3>Laravel</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+                    <h3>Bootstrap</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="92"></div></div>
+                    <span class="skill-percentage">92%</span>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fab fa-php"></i></div>
+                    <h3>PHP</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="87"></div></div>
+                    <span class="skill-percentage">87%</span>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>MySQL</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="83"></div></div>
+                    <span class="skill-percentage">83%</span>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                    <h3>Git</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Responsive Design</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="93"></div></div>
+                    <span class="skill-percentage">93%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title reveal">Education</h2>
+            <p class="section-subtitle reveal">My academic journey</p>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>2022 - Present</span>
+                        </div>
+                        <h3>Bachelor of Science in Information Technology</h3>
+                        <h4><i class="fas fa-university"></i> Davao del Sur State College</h4>
+                        <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Digos City</p>
+                        <p class="timeline-description">Completed comprehensive coursework in web development, database management, programming fundamentals, and IT systems. Developed strong foundation in modern technologies and software development practices.</p>
+                        <div class="timeline-achievements">
+                            <span class="achievement-tag"><i class="fas fa-award"></i> Web Development</span>
+                            <span class="achievement-tag"><i class="fas fa-award"></i> Database Systems</span>
+                            <span class="achievement-tag"><i class="fas fa-award"></i> Programming</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>2016 - 2022</span>
+                        </div>
+                        <h3>High School Diploma</h3>
+                        <h4><i class="fas fa-school"></i> Hagonoy National High School</h4>
+                        <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Davao del Sur</p>
+                        <p class="timeline-description">Completed secondary education with focus on Science and Technology. Actively participated in computer club activities.</p>
+                        <div class="timeline-achievements">
+                            <span class="achievement-tag"><i class="fas fa-star"></i> Tech Club Member</span>
+                            <span class="achievement-tag"><i class="fas fa-star"></i> Academic Excellence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title reveal">Work Experience</h2>
+            <p class="section-subtitle reveal">My professional journey</p>
+            <div class="experience-container">
+                <div class="experience-item reveal">
+                    <div class="experience-left">
+                        <div class="experience-number">01</div>
+                        <div class="experience-period">
+                            <span class="period-badge current">2024</span>
+                            <p class="period-time">2024 - Present</p>
+                        </div>
+                    </div>
+                    <div class="experience-right">
+                        <div class="experience-role">
+                            <h3>Front-End Web Developer</h3>
+                            <div class="company-info">
+                                <i class="fas fa-building"></i>
+                                <span>Freelance</span>
+                            </div>
+                        </div>
+                        <p class="experience-summary">Building responsive and user-friendly websites for various clients. Specializing in modern web technologies including HTML5, CSS3, JavaScript, and popular frameworks.</p>
+                        <div class="experience-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-laptop-code"></i>
+                                <div><strong>15+</strong><span>Projects Completed</span></div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-users"></i>
+                                <div><strong>6</strong><span>Happy Clients</span></div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <div><strong>100%</strong><span>Responsive</span></div>
+                            </div>
+                        </div>
+                        <div class="experience-skills">
+                            <span class="skill-badge">HTML5</span>
+                            <span class="skill-badge">CSS3</span>
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">Bootstrap</span>
+                            <span class="skill-badge">PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item reveal">
+                    <div class="experience-left">
+                        <div class="experience-number">02</div>
+                        <div class="experience-period">
+                            <span class="period-badge">6 Months</span>
+                            <p class="period-time">2026</p>
+                        </div>
+                    </div>
+                    <div class="experience-right">
+                        <div class="experience-role">
+                            <h3>Web Development Intern</h3>
+                            <div class="company-info">
+                                <i class="fas fa-building"></i>
+                                <span>National Food Authority</span>
+                            </div>
+                        </div>
+                        <p class="experience-summary">Gained hands-on experience in professional web development environment. Worked on real-world projects and learned industry best practices.</p>
+                        <div class="experience-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-code"></i>
+                                <div><strong>2</strong><span>Web Apps</span></div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-code-branch"></i>
+                                <div><strong>Git</strong><span>Version Control</span></div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div><strong>Learn</strong><span>Best Practices</span></div>
+                            </div>
+                        </div>
+                        <div class="experience-skills">
+                            <span class="skill-badge">Laravel</span>
+                            <span class="skill-badge">MySQL</span>
+                            <span class="skill-badge">Git</span>
+                            <span class="skill-badge">Team Work</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title reveal">My Projects</h2>
+            <p class="section-subtitle reveal">Some of my recent work</p>
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-icon-wrap">
+                            <i class="fas fa-id-card project-icon"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="projects/Activity1/index.html" target="_blank" class="project-btn"><i class="fas fa-external-link-alt"></i> View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Activity 1 - Personal Portfolio</h3>
+                        <p>A modern portfolio page featuring personal information, skills, goals, and contact details with dark theme and blue accents.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span><span>CSS3</span><span>Dark Theme</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-icon-wrap">
+                            <i class="fas fa-user-gear project-icon"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="projects/Activity2/index.html" target="_blank" class="project-btn"><i class="fas fa-external-link-alt"></i> View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Activity 2 - Interactive Profile</h3>
+                        <p>Interactive profile page with navigation, sidebar info, skills section, and education table with dark blue theme.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-icon-wrap">
+                            <i class="fas fa-hand-pointer project-icon"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="projects/Activity3/index.html" target="_blank" class="project-btn"><i class="fas fa-external-link-alt"></i> View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Activity 3 - Hover Card</h3>
+                        <p>An elegant hover card with smooth animations revealing additional information and social icons on hover.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span><span>CSS3</span><span>Animations</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-icon-wrap">
+                            <i class="fas fa-toggle-on project-icon"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="projects/Activity4/index.html" target="_blank" class="project-btn"><i class="fas fa-external-link-alt"></i> View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Activity 4 - About Me Profile</h3>
+                        <p>Profile card with toggle button functionality to show/hide additional information with smooth transitions.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-icon-wrap">
+                            <i class="fas fa-circle-half-stroke project-icon"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="projects/Activity5/index.html" target="_blank" class="project-btn"><i class="fas fa-external-link-alt"></i> View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Activity 5 - Dark Mode Toggle</h3>
+                        <p>Profile page with dynamic dark mode toggle functionality, switching between light and dark themes.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-icon-wrap">
+                            <i class="fas fa-cloud-sun-rain project-icon"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="projects/weather-app/index.html" target="_blank" class="project-btn"><i class="fas fa-external-link-alt"></i> View App</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather App</h3>
+                        <p>A beautiful weather application that displays real-time weather information for cities around the world with detailed metrics.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title reveal">About Me</h2>
+            <div class="about-content">
+                <div class="about-image reveal">
+                    <div class="about-image-wrapper">
+                        <img src="pic/profile.png" alt="Jhon Kenneth Sevillano" loading="lazy">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3 class="reveal">Front-End Web Developer</h3>
+                    <p class="reveal">I am a passionate front-end web developer specializing in creating responsive, user-friendly, and performance-optimized web applications. I enjoy turning complex ideas into clean, modern designs.</p>
+                    <div class="about-info reveal">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div><h4>Location</h4><p>Davao del Sur, Philippines</p></div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div><h4>Email</h4><p>jhonkennethsevillano@dssc.edu.ph</p></div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-code"></i>
+                            <div><h4>Experience</h4><p>5+ Years</p></div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div><h4>Availability</h4><p>Open to opportunities</p></div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary reveal">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Carousel Section -->
+    <section id="tips" class="tips-section">
+        <div class="container">
+            <h2 class="section-title reveal">Web Dev Tips & Tutorials</h2>
+            <p class="section-subtitle reveal">Quick tips and tricks for better web development</p>
+
+            <div class="carousel-container reveal">
+                <button class="carousel-btn prev-btn" onclick="prevTip()" aria-label="Previous tip">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <div class="tips-carousel">
+                    <div class="tip-card active">
+                        <div class="tip-icon"><i class="fas fa-code"></i></div>
+                        <h3>Clean Code Practice</h3>
+                        <p>Use meaningful variable and function names. Your code should be self-documenting. Instead of <code>x</code>, use <code>userAge</code>.</p>
+                        <div class="tip-footer">
+                            <span class="tip-category">Best Practice</span>
+                            <span class="tip-number">Tip #1</span>
+                        </div>
+                    </div>
+
+                    <div class="tip-card">
+                        <div class="tip-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Mobile-First Design</h3>
+                        <p>Always design for mobile first, then scale up. Use CSS media queries with <code>min-width</code> instead of <code>max-width</code>.</p>
+                        <div class="tip-footer">
+                            <span class="tip-category">Responsive Design</span>
+                            <span class="tip-number">Tip #2</span>
+                        </div>
+                    </div>
+
+                    <div class="tip-card">
+                        <div class="tip-icon"><i class="fas fa-bolt"></i></div>
+                        <h3>Performance Optimization</h3>
+                        <p>Optimize images before uploading. Use WebP format and lazy loading with <code>loading="lazy"</code> attribute.</p>
+                        <div class="tip-footer">
+                            <span class="tip-category">Performance</span>
+                            <span class="tip-number">Tip #3</span>
+                        </div>
+                    </div>
+
+                    <div class="tip-card">
+                        <div class="tip-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Security First</h3>
+                        <p>Always validate user input on both client and server side. Never trust user data. Use prepared statements for database queries.</p>
+                        <div class="tip-footer">
+                            <span class="tip-category">Security</span>
+                            <span class="tip-number">Tip #4</span>
+                        </div>
+                    </div>
+
+                    <div class="tip-card">
+                        <div class="tip-icon"><i class="fas fa-palette"></i></div>
+                        <h3>CSS Variables</h3>
+                        <p>Use CSS custom properties (variables) for consistent theming: <code>:root { --primary-color: #16a34a; }</code></p>
+                        <div class="tip-footer">
+                            <span class="tip-category">CSS</span>
+                            <span class="tip-number">Tip #5</span>
+                        </div>
+                    </div>
+
+                    <div class="tip-card">
+                        <div class="tip-icon"><i class="fas fa-universal-access"></i></div>
+                        <h3>Accessibility Matters</h3>
+                        <p>Use semantic HTML tags like <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>. Add alt text to images.</p>
+                        <div class="tip-footer">
+                            <span class="tip-category">Accessibility</span>
+                            <span class="tip-number">Tip #6</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-btn next-btn" onclick="nextTip()" aria-label="Next tip">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="goToTip(0)"></span>
+                <span class="indicator" onclick="goToTip(1)"></span>
+                <span class="indicator" onclick="goToTip(2)"></span>
+                <span class="indicator" onclick="goToTip(3)"></span>
+                <span class="indicator" onclick="goToTip(4)"></span>
+                <span class="indicator" onclick="goToTip(5)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title reveal">Get In Touch</h2>
+            <p class="section-subtitle reveal">Let's work together on your next project</p>
+            <div class="contact-content">
+                <div class="contact-form-wrapper reveal">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                            <i class="fas fa-comment-alt"></i>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-info reveal">
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>Davao del Sur, Philippines</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>jhonkennethsevillano@dssc.edu.ph</p>
+                    </div>
+                    <div class="social-links">
+                        <h3>Connect With Me</h3>
+                        <div class="social-icons">
+                            <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; <span id="year">2026</span> Jhon Kenneth Sevillano. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
